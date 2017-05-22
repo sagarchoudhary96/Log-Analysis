@@ -51,12 +51,23 @@
     log.path like concat('%',articles.slug,'%') group by articles.title,articles.author 
     order by views desc;
   ```
+  | Column  | Type    |
+  | :-------| :-------|
+  | title   | text    |
+  | author  | text    |
+  | views   | Integer |
+  
   4. Create vier error_log_view using:
   ```
     create view error_log_view as select date(time),round(100.0*sum(case log.status when '200 OK' 
     then 0 else 1 end)/count(log.status),2) as "Percent Error" from log group by date(time) 
     order by "Percent Error" desc;
   ```
+  | Column        | Type    |
+  | :-------      | :-------|
+  | date          | date    |
+  | Percent Error | float   |
+  
 #### Running the queries:
   1. From the vagrant directory inside the virtual machine,run logs.py using:
   ```
