@@ -6,7 +6,7 @@
 ### How to Run?
 
 #### PreRequisites:
-  * [Python ~2.7](https://www.python.org/)
+  * [Python3](https://www.python.org/)
   * [Vagrant](https://www.vagrantup.com/)
   * [VirtualBox](https://www.virtualbox.org/)
 
