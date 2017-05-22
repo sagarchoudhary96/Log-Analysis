@@ -18,7 +18,7 @@ query_2_result = dict()
 query_2_result['title'] = "\n2. The most popular article authors of all time are:\n"
 
 query_3_result = dict()
-query_3_result['title'] = "\n3. Days with more than 1%% of request that lead to an error:\n"
+query_3_result['title'] = "\n3. Days with more than 1% of request that lead to an error:\n"
 
 
 # returns query result

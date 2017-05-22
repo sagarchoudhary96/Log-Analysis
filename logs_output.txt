@@ -13,6 +13,6 @@ ubuntu@ubuntu-xenial:/vagrant$ python3 logs.py
 	Anonymous Contributor ---> 171762 views
 	Markoff Chaney ---> 85387 views
 
-3. Days with more than 1%% of request that lead to an error:
+3. Days with more than 1% of request that lead to an error:
 
 	2016-07-17 ---> 2.26 %
