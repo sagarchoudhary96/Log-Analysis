@@ -48,7 +48,7 @@
   3. Create view article_view using:
   ```
     create view article_view as select title,author,count(*) as views from articles,log where 
-    log.path like concat('%',articles.slug,'%') group by articles.title,articles.author 
+    log.path like concat('%',articles.slug) group by articles.title,articles.author 
     order by views desc;
   ```
   | Column  | Type    |
